@@ -1,7 +1,7 @@
 ---
 title: "About"
 date: 2021-06-03T23:41:10+02:00
-draft: true
+draft: false
 position: right
 ---
 

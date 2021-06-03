@@ -1,7 +1,7 @@
 ---
 title: "Contact"
 date: 2021-06-03T23:41:14+02:00
-draft: true
+draft: false
 position: right
 ---
 
