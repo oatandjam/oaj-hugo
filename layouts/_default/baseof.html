@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+{{ partial "head" . }}
+  <body>
+    {{ partial "header" . }}
+    <div class="mainContain">
+      <div class="uk-container uk-animation-slide-bottom-medium">
+    <!-- Code that all your templates share, like a header -->
+    {{ block "main" . }}
+      <!-- The part of the page that begins to differ between templates -->
+    {{ end }}
+    </div>
+  </div>
+    {{ block "footer" . }}
+    <footer>
+      <i class="far fa-envelope uk-margin-small-right"></i><span>jonathan@oaj.moe</span>
+      <i class="fab fa-github-square uk-margin-small-right"></i><span>oatandjam</span>
+    </footer>
+    {{ end }}
+  </body>
+</html>
