@@ -7,3 +7,5 @@ draft: false
 # Welcome!
 
 Thanks for visting my website. Enjoy your stay!
+
+{{< newsite >}}

@@ -3,12 +3,12 @@
 }
 body {
     height: fit-content;
-    background-color: rgb(20, 23, 26);
+    background-color: #161b21;
     height: 100%;
 }
 html {
     height: 100%;
-    background-color: rgb(20, 23, 26)!important;
+    background-color: #161b21!important;
 
 }
 h1, h2, h3 {
@@ -22,14 +22,18 @@ p {
 }
 
 .uk-navbar-container {
-    background-color:  rgb(14, 16, 19)!important;
-    padding-left: 15vw;
-    padding-right: 15vw;
+    max-width: 1300px;
     height: 50px;
+    background-color:  #14171d!important;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.navbar {
+    background-color:  #14171d!important;
     box-shadow: 0px 5px 18px rgba(0,0,0,0.3);
     margin-bottom: 20px;
-    
-    
 }
 
 .uk-navbar-nav > li > a {
@@ -47,15 +51,15 @@ p {
     align-items: center;
 }
 .uk-navbar-dropdown {
-    background: rgb(14, 16, 19)!important;
+    background: #14171d!important;
     border-bottom: solid 2px tomato;
 }
 .uk-container {
-    background:rgb(14, 16, 19);
+    background:#14171d;
     border: solid 2px tomato;
     border-radius: 2pt;
     margin-top: 20px;
-    padding: 10px;
+    padding: 40px;
 }
 
 .uk-container * {
@@ -95,7 +99,7 @@ p {
 }
 
 .uk-offcanvas-bar {
-    background: rgba(14, 16, 19, 0.95)!important;
+    background: #14171d!important;
     border-right: solid 2px tomato;
 
 }
@@ -104,15 +108,20 @@ p {
     max-width: 1235px;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 0px!important;
 }
 
 .uk-alert-warning {
-    border: solid 2px rgb(71, 74, 255);
+    border: solid 2px tomato;
     border-radius: 2pt;
-    background: none!important;
+    background: tomato!important;
 }
 .uk-alert-warning * {
-    color: rgb(71, 74, 255);
+    color: rgb(102, 46, 36);
+    font-weight: bold;
+}
+DIV.uk-alert-warning  a:hover {
+    color: rgb(255, 197, 197)!important;
 }
 
 footer {
@@ -120,8 +129,8 @@ footer {
     height: 50px;
     text-align: center;
     padding-top: 20px;
-    color: rgb(51, 50, 56);
-    background: rgb(20, 23, 26);
+    color: rgb(63, 63, 68);
+    background: #161b21;
 }
 
 footer span *{
@@ -131,11 +140,11 @@ footer span *{
     padding-right: 1em;
 }
 footer i {
-    color: rgb(51, 50, 56);
+    color: rgb(63, 63, 68);
 }
 
 DIV.imgThumb > a > img {
-    max-width:280px!important;
+    max-width:270px!important;
     border: solid 2px rgb(51, 50, 56);
     border-radius: 2pt;
 }
@@ -159,4 +168,8 @@ DIV.imgThumb > a > img:hover {
         margin-right: auto;
         position: absolute;
     }
+}
+
+a:hover {
+    color: tomato!important;
 }
