@@ -173,3 +173,7 @@ DIV.imgThumb > a > img:hover {
 a:hover {
     color: tomato!important;
 }
+
+#tags * {
+    color: rgb(136, 132, 132);
+}

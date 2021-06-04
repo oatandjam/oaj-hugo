@@ -1,0 +1,16 @@
+{{ define "main" }}
+<section id="main">
+  <h1 id="title">{{ .Title }}</h1>
+  <div>
+        <article id="content">
+            <p><i class="far fa-calendar-alt"></i>&nbsp{{ .Date.Format "January 2, 2006" }}</p>
+            <span id="tags">
+            {{ range .Params.tags }}
+                <a>#{{ . }}</a>
+            {{ end }}
+            </span>
+           {{ .Content }}
+        </article>
+  </div>
+</section>
+{{ end }}
