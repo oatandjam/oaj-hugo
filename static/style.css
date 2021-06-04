@@ -184,11 +184,6 @@ DIV.imgThumb > a > img:hover {
     }
 }
 
-
-
-
-
-
 a:hover {
     color: tomato!important;
 }
@@ -199,4 +194,26 @@ a:hover {
 
 img {
     border-radius: 2pt;
+}
+
+.uk-lightbox {
+    background: #14171d!important;
+}
+
+.uk-lightbox-items>*>* {
+    max-width: 90vw!important;
+    max-height: 90vh!important;
+}
+
+.uk-lightbox-button {
+    background: #161b21!important;
+    border-radius: 2pt!important;
+}
+
+.uk-lightbox-button:hover {
+    border: 1px solid tomato;
+}
+
+.uk-lightbox-toolbar.uk-position-top {
+    background: none!important;
 }
