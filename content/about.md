@@ -17,9 +17,9 @@ When I'm not programming, I like to draw and make music.
 
 A lot of interesting websites use this domain extension:
 
-- [safe.moe](safe.moe)
-- [guya.moe](guya.moe)
-- [themes.moe](themes.moe)
+- [safe.moe](https://safe.moe)
+- [guya.moe](https://guya.moe)
+- [themes.moe](https://themes.moe)
 
 ### What does oaj/oatandjam mean?
 
