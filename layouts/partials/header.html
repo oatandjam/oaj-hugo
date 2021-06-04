@@ -29,14 +29,14 @@
             <ul class="uk-nav uk-nav-default">
                 {{ $currentPage := . }}
                 {{ range .Site.Menus.left }}
-                    <li class="{{ if $currentPage.IsMenuCurrent "left" . }}active{{ end }}"li class="{{ if $currentPage.IsMenuCurrent "left" . }}active{{ end }}"><a href="{{ .URL }}"><i class="fas fa-paint-brush uk-margin-small-right"></i>&nbsp;{{ .Title }}</a></li>
+                    <li class="{{ if $currentPage.IsMenuCurrent "left" . }}active{{ end }}"><a href="{{ .URL }}"><i class="fas fa-paint-brush uk-margin-small-right"></i>&nbsp;{{ .Title }}</a></li>
                 {{ end }}
                 <li><a href="https://oatandjam.bandcamp.com"><i class="fas fa-music uk-margin-small-right"></i>&nbsp;music</a></li>
                 <li><a href="https://www.github.com/oatandjam"><i class="fas fa-code uk-margin-small-right"></i>&nbsp;code</a></li>
                 <li class="uk-nav-divider"></li>
                 {{ $currentPage := . }}
                 {{ range .Site.Menus.right }}
-                    <li class="{{ if $currentPage.IsMenuCurrent "right" . }}active{{ end }}"><a href="{{ .URL }}"><a href="{{ .URL }}">{{ .Title }}</a></li>
+                    <li class="{{ if $currentPage.IsMenuCurrent "right" . }}active{{ end }}"><a href="{{ .URL }}">{{ .Title }}</a></li>
                 {{ end }}
             </ul>
         </div>
