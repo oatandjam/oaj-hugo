@@ -3,3 +3,4 @@ languageCode = "en"
 title = "oatandjam"
 
 # pygmentsUseClasses = true
+enableEmoji = true
