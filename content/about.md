@@ -5,7 +5,7 @@ draft: false
 menu: right
 ---
 
-I'm an IT student and freelance artist based in Germany :de:.
+I'm an IT student and artist based in Germany :de:.
 
 When I'm not programming, I like to draw and make music.
 
