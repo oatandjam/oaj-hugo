@@ -2,15 +2,16 @@
 <section id="main">
   <h1 id="title">{{ .Title }}</h1>
   <div>
-        <article id="content">
-            <p><i class="far fa-calendar-alt"></i>&nbsp {{ .Date.Format "January 2, 2006" }}</p>
-            <span id="tags">
-            {{ range .Params.tags }}
-                <a>#{{ . }}</a>
-            {{ end }}
-            </span>
-           {{ .Content }}
-        </article>
+    <article id="content">
+        <p class="date"><i class="far fa-calendar-alt"></i>&nbsp {{ .Date.Format "January 2, 2006" }}</p>
+        <span id="tags">
+        <i class="fas fa-tags"></i>
+        {{ range .GetTerms "tags" }}
+            <a href="{{ .Permalink }}">#{{ .Title }}</a>
+        {{ end }}
+        </span>
+        {{ .Content }}
+    </article>
   </div>
 </section>
 {{ end }}
