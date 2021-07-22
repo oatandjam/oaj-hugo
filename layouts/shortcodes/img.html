@@ -1,1 +1,1 @@
-<img src="{{ .Get "src" }}" style="width: {{ .Get "width" }}; height: {{.Get "height" }};">
+<img src="{{ .Get "src" }}" style="width: {{ .Get "width" | safeCSS  }}; height: {{ .Get "height" | safeCSS  }}; margin: {{ .Get "margin" | safeCSS  }}; filter: {{ .Get "filter" | safeCSS }};">

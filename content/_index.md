@@ -1,5 +1,5 @@
 ---
-title: "HOME"
+title: "Home"
 date: 2021-06-03T23:07:17+02:00
 draft: false
 ---

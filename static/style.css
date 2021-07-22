@@ -1,5 +1,9 @@
 /*
-create colour variables
+colours
+
+red #f34d3e
+
+
 */
 :root {
     --accent-bg-color: #f34d3e;
@@ -8,6 +12,21 @@ create colour variables
 ::selection {
     background: #363d55!important;
 }
+
+body::-webkit-scrollbar {
+    width: 15px;               /* width of the entire scrollbar */
+}
+  
+body::-webkit-scrollbar-track {
+    background: #14171d;   
+}
+  
+body::-webkit-scrollbar-thumb {
+    background-color: #161b21;  
+    border-radius: 20px;
+    border: solid #363d55 1px;
+}
+
 body {
     height: fit-content;
     background-color: #161b21;
@@ -16,11 +35,13 @@ body {
     grid-template-rows: auto 1fr auto;
     font-kerning: auto;
 }
+
 html {
     height: 100%;
     background-color: #161b21!important;
-
+    scroll-behavior: smooth;
 }
+
 h1, h2, h3 {
     font-family: Poppins!important;
     font-weight: 700!important;
@@ -28,12 +49,21 @@ h1, h2, h3 {
 
 p {
     font-family: Jost!important;
-    font-weight: 200!important;
     font-size: 1.1rem;
 }
 
+.uk-container p {
+    margin-top: 15px!important;
+    margin-bottom: 15px!important;
+}
+
+a {
+    font-family: Jost!important;
+    text-decoration: none!important;
+}
+
 .uk-navbar-container {
-    max-width: 1300px;
+    max-width: 1250px;
     height: 50px;
     background-color:  #14171d!important;
     margin-left: auto;
@@ -48,8 +78,8 @@ p {
 }
 
 
-.uk-navbar-nav > li:hover {
-    border-bottom: var(--accent-bg-color) solid;
+.uk-navbar-nav > li.active {
+    background-color: #13151b;
 }
 
 .uk-navbar-nav > li > a {
@@ -59,9 +89,10 @@ p {
     font-family: 'Jost', sans-serif!important;
 } 
 
+
 .uk-logo {
-    height: 50px!important;
-    padding: 10px 15px;
+    height: 40px;
+    width: auto!important;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -72,10 +103,12 @@ p {
 }
 .uk-container {
     background:#14171d;
-    /*border: solid 2px var(--accent-bg-color);;*/
-    border-radius: 5pt;
+    border-radius: 15pt;
     margin-top: 20px;
-    padding: 40px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-left: 25px!important;
+    padding-right: 25px!important;
 }
 
 .uk-container * {
@@ -89,8 +122,8 @@ p {
 
 .hamburger {
     display: none!important;
-    border: solid 2px var(--accent-bg-color)!important;
-    border-radius: 3pt!important;
+    border: none!important;
+    border-radius: 5pt!important;
     margin-top: 5px!important;
     margin-bottom: 5px!important;
     margin-left: 20px!important;
@@ -114,10 +147,6 @@ p {
     .uk-navbar-left {
         display: none!important;
     }
-    .uk-navbar-container {
-        padding-left: 0px;
-        padding-right: 0px;      
-    }
     .hamburger {
         display: block!important;
     }
@@ -132,6 +161,7 @@ p {
     background: #14171d!important;
     border-right: solid 2px var(--accent-bg-color);
     display: none;
+    box-shadow: 0 0 40px 20px rgba(0, 0, 0, 0.4);
 
 }
 
@@ -140,18 +170,25 @@ p {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 0px!important;
+    box-shadow: 0 0 20px 2px rgba(0, 0, 0, 0.2);
+}
+
+.uk-alert * {
+    font-family: poppins;
+    font-size: 1.1rem!important;
+    font-weight: 700!important;
 }
 
 .uk-alert-warning {
-    border-radius: 2pt;
+    border-radius: 5pt;
     background: var(--accent-bg-color)!important;
 }
 .uk-alert-warning * {
-    color: #72352f;
+    color: rgba(0, 0, 0, 0.5);
     font-weight: bold;
 }
 DIV.uk-alert-warning  a:hover {
-    color: rgb(255, 197, 197)!important;
+    color: rgba(0, 0, 0, 0.7)!important;
 }
 
 footer {
@@ -160,26 +197,28 @@ footer {
     bottom: 0;
     text-align: center;
     padding-top: 5px;
-    color: #72352f;
-    background: var(--accent-bg-color);
+    color: rgba(0, 0, 0, 0.4);;
+    background: #161b21;
     z-index: 100;
     margin-top: 40px;
 }
 
-footer span {
-    color: inherit;
-    text-decoration: none;
+footer * {
+    color: rgba(255, 255, 255, 0.1);
     font-size: 1rem;
+    text-decoration: none;
+
+} 
+
+footer span {
     padding-right: 1em;
 }
 
-footer i {
-    color: #72352f;
-}
 
 DIV.imgThumb > a > img {
     max-width:270px!important;
-    border-radius: 3pt;
+    border-radius: 5pt;
+    box-shadow: 0 0 20px 2px rgba(0, 0, 0, 0.3); 
 }
  
 DIV.imgThumb > a > img:hover {
@@ -218,7 +257,7 @@ a:hover {
 
 
 img {
-    border-radius: 2pt;
+    border-radius: 5pt;
 }
 #main > img, #content > p > img {
     margin: 10px 0 10px 0;
@@ -235,7 +274,8 @@ img {
 
 .uk-lightbox-button {
     background: #161b21!important;
-    border-radius: 2pt!important;
+    border-radius: 5pt!important;
+    box-shadow: 0 0 20px 2px rgba(0, 0, 0, 0.2);
 }
 
 .uk-lightbox-button:hover {
@@ -252,4 +292,42 @@ p.date, p.date * {
 
 #tags * {
     color: #898ea1;
+}
+
+button.bigRedButton {
+    background: var(--accent-bg-color);
+    border: none;
+    padding: 10px 25px 10px 25px;
+    border-radius: 6pt;
+    width: 250px;
+    height: 70px;
+    box-shadow: -3px 3px 0px 1px rgba(0, 0, 0, 0.4);
+    margin: 0px 0px 3px 3px;
+}
+
+button.bigRedButton:hover {
+    box-shadow: none;
+    margin: 0px 0px 3px 0px;
+
+}
+
+button.bigRedButton > h1 {
+    padding: 0!important;
+    margin: 0!important;
+}
+
+button.bigRedButton > h1 > a {
+    color: #fff!important;
+}
+
+button.bigRedButton > h1 > a:hover {
+    color: #fff!important;
+    text-decoration: none!important;
+}
+
+img#panther {
+    position: absolute;
+    bottom: 0;
+    max-height: 250px;
+    right: 0
 }
