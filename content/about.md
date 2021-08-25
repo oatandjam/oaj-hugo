@@ -31,14 +31,13 @@ It's a pseudonym that I created by omitting letters from my name. It doesn't car
  
 I don't play much but when I do these are my go to games:
 
-- [Elona](https://share.dmca.gripe/1ISLV8ZvDXM7N6WM.png)
+- Elona
 - Osu!
-- Doom (classic)
-- Command and Conquer 
+- OpenRA
 
 Apart from these games I tend to play alot of [visual novels](https://en.wikipedia.org/wiki/Visual_novel).
 
-![Summer Pockets](https://share.dmca.gripe/KyDrbyFdkNcSC45d.jpg "Summer Pockets") 
+![Summer Pockets](https://i.postimg.cc/pdDB33Ls/summer-pockets.jpg "Summer Pockets") 
 
 *Summer Pockets Screenshot*
 

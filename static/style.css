@@ -57,9 +57,19 @@ p {
     margin-bottom: 15px!important;
 }
 
-a {
+#content a {
     font-family: Jost!important;
     text-decoration: none!important;
+    box-shadow: 0 1px 0 #fff;
+}
+
+#content a:hover {
+    box-shadow: 0 1px 0 var(--accent-bg-color);
+    color: #fff;
+}
+
+.imgThumb > a {
+    box-shadow: none!important;
 }
 
 .uk-navbar-container {
@@ -170,7 +180,7 @@ a {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 0px!important;
-    box-shadow: 0 0 20px 2px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 20px 0px rgba(5, 5, 7, 0.2);
 }
 
 .uk-alert * {
@@ -251,7 +261,7 @@ DIV.imgThumb > a > img:hover {
     }
 }
 
-a:hover {
+.uk-navbar-nav a:hover {
     color: var(--accent-bg-color)!important;
 }
 

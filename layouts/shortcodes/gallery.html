@@ -1,8 +1,8 @@
 <div class="cent" uk-grid="masonry: true" uk-lightbox >
     {{ range .Site.Data.art }}
         <div class="imgThumb">
-            <a class="uk-inline" href="https://share.dmca.gripe/{{ .img }}" data-caption="{{ .title }}">
-            <img src="https://share.dmca.gripe/{{ .img }}" alt=""></a>
+            <a class="uk-inline" href="https://i.postimg.cc/{{ .img }}" data-caption="{{ .title }}">
+            <img src="https://i.postimg.cc/{{ .img }}" alt=""></a>
         </div>
     {{ end }}
 </div>
