@@ -133,11 +133,10 @@ p {
 .hamburger {
     display: none!important;
     border: none!important;
-    border-radius: 5pt!important;
-    margin-top: 5px!important;
-    margin-bottom: 5px!important;
-    margin-left: 20px!important;
+    line-height: 0px!important;
+    padding: 0px 20px!important;
 }
+
 .hamburger * {
     color: var(--accent-bg-color);;
     font-size: 20px;
@@ -340,4 +339,14 @@ img#panther {
     bottom: 0;
     max-height: 250px;
     right: 0
+}
+
+hr {
+    border: solid #1a2027 1px!important;
+}
+
+.homepage-content > h1,
+.homepage-content > h2,
+.homepage-content > h3 {
+    color: #ff5d4f;
 }
