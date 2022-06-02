@@ -13,7 +13,7 @@ When I'm not programming, I like to draw and make music.
 
 ### Why .moe? :sparkles:
 
-[.moe](https://get.moe/) is a fairly new top-levl domain extension that I happened to come across. Why did I decide to go with this? Because it sounded pretty decent.
+[.moe](https://get.moe/) is a fairly new top-level domain extension that I happened to come across. Why did I decide to go with this? Because it sounded pretty decent.
 
 A lot of interesting websites use this domain extension:
 
