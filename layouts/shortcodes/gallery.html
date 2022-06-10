@@ -1,9 +1,12 @@
-<div class="cent" uk-grid="masonry: true" uk-lightbox >
-    {{ range .Site.Data.art }}
-        <div class="imgThumb">
-            <a class="uk-inline" href="https://i.postimg.cc/{{ .img }}" data-caption="{{ .title }}">
-            <img src="https://i.postimg.cc/{{ .img }}" alt=""></a>
-        </div>
-    {{ end }}
+<div class="cent" uk-grid="masonry: true" uk-lightbox>
+  {{ range .Site.Data.art }}
+  <div class="imgThumb">
+    <a class="uk-inline" href="https://i.postimg.cc/{{ .img }}" data-caption="{{ .title }}">
+      <img src="https://i.postimg.cc/{{ .img }}" alt="">
+      <div class="imgContent">
+        <h2>{{ .title }}</h2>
+      </div>
+    </a>
+  </div>
+  {{ end }}
 </div>
-
