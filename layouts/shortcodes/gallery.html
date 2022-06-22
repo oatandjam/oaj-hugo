@@ -1,8 +1,8 @@
 <div class="cent" uk-grid="masonry: true" uk-lightbox>
   {{ range .Site.Data.art }}
   <div class="imgThumb">
-    <a class="uk-inline" href="https://i.postimg.cc/{{ .img }}" data-caption="{{ .title }}">
-      <img src="https://i.postimg.cc/{{ .img }}" alt="">
+    <a class="uk-inline" href="https://res.cloudinary.com/oaj/image/upload/v1655900285/art/{{ .img }}" data-caption="{{ .title }}">
+      <img src="https://res.cloudinary.com/oaj/image/upload/c_thumb,w_600,g_face/v1655899877/art/{{ .img }}" alt="">
       <div class="imgContent">
         <h2>{{ .title }}</h2>
       </div>
