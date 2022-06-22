@@ -375,7 +375,6 @@ img#panther {
     position: absolute;
     bottom: 0;
     max-height: 250px;
-<<<<<<< HEAD
     right: 0;
 }
 hr {
@@ -386,7 +385,4 @@ hr {
 .homepage-content > h2,
 .homepage-content > h3 {
     color: #ff5d4f;
-=======
-    right: 0
->>>>>>> develop
 }
